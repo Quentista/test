@@ -11,7 +11,8 @@ class Test : public QWidget
 public:
 	Test(QWidget *parent = 0);
 	
-	virtual void pEve(QPaintEvent* event);
+protected:
+	virtual void paintEvent(QPaintEvent* event);
 signals:
 	
 public slots:
